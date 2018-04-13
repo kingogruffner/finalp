@@ -21,7 +21,7 @@ session_start();
             <div class="container-fluid row">
 
                 <div class="col-md-5 noshrink">
-                    <a class="navbar-brand pull-left" href="#">Slimey Art</a>
+                    <a class="navbar-brand pull-left" href="home.php">Slimey Art</a>
                 </div>
                 <div class="col-md-2">
                     <form class="pull-left" action="http://www.randyconnolly.com" method="get">
@@ -38,7 +38,7 @@ session_start();
                 <div class="col-md-5">
                     <ul class="nav navbar-nav pull-right">
                         <li><a href="#" id="bm"><span class="glyphicon glyphicon-upload"></span> Upload</a></li>
-                        <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Sign In<article></article></a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
                         <li><a href="signup.php" id="bm"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
                     </ul>
                 </div>
@@ -89,7 +89,6 @@ session_start();
 <main>
     <h1>Find an image!</h1>
     <?php 
-    $image = array();
     for ($i=0; $i<20; $i++) {
         echo '<a href="image.php">';
         echo '<img class ="image" src="images/001.jpg" alt="Noodle Snail" title="Noodle Snail">';

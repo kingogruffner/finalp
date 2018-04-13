@@ -29,6 +29,9 @@ if(isset($_POST['btn-login']))
 <head>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/index.css">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> <!--New Font-->
 	<title>Slimy</title>
 </head>
 <body>
@@ -40,7 +43,7 @@ if(isset($_POST['btn-login']))
         
        <form class="form-signin" method="post" id="login-form">
       
-        <h2 class="form-signin-heading">Log In.</h2><hr />
+        <h2 class="form-signin-heading">Log In</h2><hr />
         
         <div id="error">
         <?php
@@ -72,7 +75,7 @@ if(isset($_POST['btn-login']))
             </button>
         </div>  
       	<br />
-            <label>Don't have account yet ! <a href="signup.php">Sign Up</a></label>
+            <label>Don't have account yet? <a href="signup.php">Sign Up</a></label>
       </form>
 
     </div>

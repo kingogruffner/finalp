@@ -72,6 +72,9 @@ if(isset($_POST['btn-signup']))
 <title>Slimy Uploads: Signup</title>
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/index.css">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> <!--New Font-->
 
 </head>
 <body>
@@ -125,7 +128,7 @@ if(isset($_POST['btn-signup']))
                 </button>
             </div>
             <br />
-            <label>have an account ! <a href="index.php">Sign In</a></label>
+            <label>Have an account? <a href="index.php">Sign In</a></label>
         </form>
        </div>
 </div>
