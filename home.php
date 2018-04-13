@@ -1,10 +1,16 @@
+<?php 
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SlimeyArt Home</title>
+	<title>Slimey Art Home</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet"> <!--New Font-->
 </head>
 <body>
@@ -31,8 +37,9 @@
                 </div>
                 <div class="col-md-5">
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="ideasubmit.html"><span class="glyphicon glyphicon-log-out"></span> Upload <article></article></a></li>
-                        <li><a href="#" id="bm"><span class="glyphicon glyphicon-star"></span> Favorite</a></li>
+                        <li><a href="#" id="bm"><span class="glyphicon glyphicon-upload"></span> Upload</a></li>
+                        <li><a href="index.php"><span class="glyphicon glyphicon-log-out"></span> Sign In<article></article></a></li>
+                        <li><a href="signup.php" id="bm"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
                     </ul>
                 </div>
             </div>
@@ -79,24 +86,22 @@
 
     </header>
 </div>
-			<!--Side Menu-->
-            <!-- <aside class="col-md-2">
-                <div class="panel panel-info">
-                    <div class="panel-heading">Sidebar</div>
-                    <ul class="list-group">
-                    <?php
+<main>
+    <h1>Find an image!</h1>
+    <?php 
+    $image = array();
+    for ($i=0; $i<20; $i++) {
+        echo '<a href="image.php">';
+        echo '<img class ="image" src="images/001.jpg" alt="Noodle Snail" title="Noodle Snail">';
+        echo '</a>';
+    }
 
-                    echo '<li class="list-group-item"><a href="#">Blank</a></li>';
-                    echo '<li class="list-group-item"><a href="#">Blank</a></li>';
-                    echo '<li class="list-group-item"><a href="#">Blank</a></li>';
-                    echo '<li class="list-group-item"><a href="#">Blank</a></li>';
-                    echo '<li class="list-group-item"><a href="#">Blank</a></li>';
-                    echo '<li class="list-group-item"><a href="#">Blank</a></li>';
+    ?>
+</main>
 
-                    ?>
+<footer>
+    
 
-                    </ul>
-                </div>
-            </aside> -->
+</footer>
 </body>
 </html>
