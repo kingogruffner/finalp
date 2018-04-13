@@ -1,0 +1,97 @@
+html, body {
+	background-color: #191919;
+}
+
+button, input {
+	margin-top: 10px;
+	font-family: sans-serif;
+}
+
+main {
+	font-family: Bangers;
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding-left: 8px;
+	background-color: #4c4c4c;
+}
+
+footer {
+	margin: auto;
+	background-color: #6FB76F;
+	padding: 20px;
+}
+
+.image {
+	margin: 5px;
+	width: 287px;
+	height: 287px;
+	border: 2px solid grey;
+	border-radius: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	margin: 3px;
+	font-family: Bangers;
+	font-size: 1.4em;
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	margin: 3px;
+	font-family: Bangers;
+	font-size: 1.3em;
+	color: white;
+	border-radius: 20px;
+	background-color: grey;
+}
+.navbar-default .navbar-brand {
+	margin: 3px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+.navbar-default .navbar-brand:hover {
+	margin: 3px;
+	color: darkgreen;
+	border-radius: 20px;
+	background-color: grey;
+}
+
+.navbar-default .navbar-brand:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.navbar {
+	background-color: #6FB76F;
+	border: none;
+}
+
+
+.pull-left {
+	font-family: Bangers;
+	font-size: 3em;
+}
+
+.btn-primary {
+	background-color: #191919;
+	border: #191919;
+	border-radius: 10px;
+	color: white;
+}
+
+.btn-primary:hover {
+	background-color: darkgreen;
+	border: #191919;
+	border-radius: 10px;
+}
+
+.form-control:focus {
+	border-radius: 10px;
+	box-shadow: inset 0 1px 1px rgb(0, 255, 0);
+	border: 1px solid #6FB76F;
+}
+
