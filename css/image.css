@@ -2,10 +2,13 @@ h3 {
 	text-shadow: 2px 2px black;
 }
 
+.btn {
+	width: 50px;
+}
 
 .image {
 	margin: 5px;
-	width: 1000px;
+	width: 800px;
 	height: auto;
 	border: 2px solid grey;
 	border-radius: 10px;
