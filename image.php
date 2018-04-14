@@ -52,7 +52,14 @@
 			</div>
 			<div class="col-md-4">
 				<div class="panel panel-danger">
+				<h4>by Ryan Cwynar</h4>	
 				<h3>Description</h3>
+				<p>Description goes here</p>
+                <div class="btn-group" role="group"> 
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button>
+                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
+                </div>
 			</div>
 		</div>
 	</main>
