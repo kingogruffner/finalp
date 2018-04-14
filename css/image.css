@@ -2,13 +2,23 @@ h3 {
 	text-shadow: 2px 2px black;
 }
 
+textarea {
+	width: 330px;
+	height: 100px;
+	background-color: #4c4c4c; 
+	resize: none; 
+	border-radius: 5px;
+	color: white;
+}
+
 .btn {
-	width: 50px;
+	width: 100px;
+	height: 30px;
 }
 
 .image {
 	margin: 5px;
-	width: 800px;
+	width: 700px;
 	height: auto;
 	border: 2px solid grey;
 	border-radius: 10px;
