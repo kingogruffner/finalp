@@ -1,5 +1,7 @@
 <?php 
-
+    date_default_timezone_set('America/New_York');
+    include 'db.inc.php';
+    include 'comments.inc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,6 +62,16 @@
                     <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button>
                     <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></button>
                 </div>
+                <?php 
+                    echo "<form method='POST' action='".setComment($conn)."'>
+                    <input type='hidden' name='uid' value='Anonymous'>
+                    <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'><br>   
+                    <textarea name='comment'></textarea>
+                    <div class='btn-group' role='group'> 
+                    <button class='btn btn-primary' type='commentSubmit' name='submit'>Comment</button>
+                    </div>
+                </form>";
+                ?>
 			</div>
 		</div>
 	</main>
