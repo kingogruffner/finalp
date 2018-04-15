@@ -6,10 +6,11 @@ function getImage($conn) {
     $sql = "SELECT * FROM image";
     $result = mysqli_query($conn, $sql);
     while ($row = $result->fetch_assoc()) {
-        echo $row['Path'];  
+        echo '<a href="image.php">';
+        echo '<img class="image" src="images/'.$row['Path'].' "title="Noodle Snail">';
+        echo '</a>';  
     }
 }
-
 ?>
 
 
@@ -58,10 +59,7 @@ function getImage($conn) {
 <main>
     <h1>Find an image!</h1>
     <?php 
-        echo '<a href="image.php">';
-        echo '<img class="image" src="images/'.getImage($conn).' "title="Noodle Snail">';
-        echo '</a>';
-
+        getImage($conn);
     ?>
 </main>
 
