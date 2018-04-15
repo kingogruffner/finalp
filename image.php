@@ -1,7 +1,9 @@
 <?php 
+    session_start();
     date_default_timezone_set('America/New_York');
     include 'db.inc.php';
     include 'comments.inc.php';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -54,7 +56,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="panel panel-danger">
-				<h4>by Ryan Cwynar</h4>	
+				<h4>by <nameTag>Ryan Cwynar</nameTag></h4>	
 				<h3>Description</h3>
 				<p>Description goes here</p>
                 <div class="btn-group" role="group"> 
@@ -64,17 +66,24 @@
                 </div>
                 <?php 
                     echo "<form method='POST' action='".setComment($conn)."'>
-                    <input type='hidden' name='uid' value='Anonymous'>
-                    <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'><br>   
-                    <textarea name='comment'></textarea>
+                    <input type='hidden' name='uid' value='".$host."'>
+                    <input type='hidden' name='Date' value='".date('Y-m-d H:i:s')."'><br>   
+                    <textarea name='Comment'></textarea>
                     <div class='btn-group' role='group'> 
-                    <button class='btn btn-primary' type='commentSubmit' name='submit'>Comment</button>
+                    <button class='btn btn-primary' type='submit' name='commentSubmit'>Comment</button>
                     </div>
                 </form>";
                 ?>
 			</div>
 		</div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="h3Indent">Comments</h3>
+                <p><?php getComment($conn); ?></p>
+            </div>
+        </div>
 	</main>
+
 	<footer>
 		
 	</footer>
