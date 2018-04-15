@@ -2,17 +2,32 @@ h3 {
 	text-shadow: 2px 2px black;
 }
 
+h2 {
+	margin-left: 15px;
+	font-family: Bangers;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
 p {
-	font-family: monospace;
+	font-family: sans-serif;
 }
 
 textarea {
 	width: 330px;
 	height: 100px;
-	background-color: #4c4c4c; 
+	background-color: #191919; 
 	resize: none; 
 	border-radius: 5px;
 	color: white;
+	font-family: sans-serif;
+}
+
+select, .textLabel {
+	background-color: #191919;
+	border: 2px solid grey;
+	border-radius: 5px;
+	padding: 2px;
 }
 
 nameTag {
@@ -49,6 +64,7 @@ nameTag {
 	margin-bottom: 4px;
 	background-color: #191919;
 	border-radius: 5px;
+	border: 2px solid grey;
 }
 
 .h3Indent {
@@ -63,4 +79,16 @@ nameTag {
 
 .mainFont {
 	font-family: Calibri;
+}
+
+.uploadForm {
+	text-shadow: 2px 2px black;
+	font-family: sans-serif;
+	margin-left: 15px;
+}
+
+.buttonPosition {
+	position: absolute;
+	left: 400px;
+	top: 175px;
 }
