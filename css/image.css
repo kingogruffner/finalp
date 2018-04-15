@@ -2,6 +2,10 @@ h3 {
 	text-shadow: 2px 2px black;
 }
 
+p {
+	font-family: monospace;
+}
+
 textarea {
 	width: 330px;
 	height: 100px;
@@ -9,6 +13,11 @@ textarea {
 	resize: none; 
 	border-radius: 5px;
 	color: white;
+}
+
+nameTag {
+	color: skyblue;
+	text-shadow: 2px 2px black;
 }
 
 .btn {
@@ -30,4 +39,28 @@ textarea {
 	margin-right: 12px;
 	height: auto;
 	border: 2px solid grey;
+}
+
+.comment-box {
+	margin-left: 25px;
+	width: 525px;
+	height: auto;
+	padding: 20px;
+	margin-bottom: 4px;
+	background-color: #191919;
+	border-radius: 5px;
+}
+
+.h3Indent {
+	padding-left: 15px;
+}
+
+.dateFont {
+	display: inline;
+	color: orange;
+	margin-left: 200px;
+}
+
+.mainFont {
+	font-family: Calibri;
 }
