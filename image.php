@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-md-5">
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="#" id="bm"><span class="glyphicon glyphicon-upload"></span> Upload</a></li>
+                        <li><a href="upload.php" id="bm"><span class="glyphicon glyphicon-upload"></span> Upload</a></li>
                         <li><a href="index.php"><span class="glyphicon glyphicon-user"></span> Sign In</a></li>
                         <li><a href="signup.php" id="bm"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
                     </ul>
@@ -72,7 +72,7 @@
                     <div class='btn-group' role='group'> 
                     <button class='btn btn-primary' type='submit' name='commentSubmit'>Comment</button>
                     </div>
-                </form>";
+                </form><br>";
                 ?>
 			</div>
 		</div>

@@ -25,4 +25,33 @@ function getComment($conn) {
 	 
 }
 
+function setImage($conn) {
+	if (isset($_POST['imageSubmit'])) {
+
+		$target = "images/".basename($_FILES['Path']['name']);
+
+		$uid = $_POST['uid'];
+		$path = $_FILES['Path']['name'];
+		$title = $_POST['Title'];
+		$description = $_POST['Description'];
+		$likes = $_POST['Likes'];
+		$dislikes = $_POST['Dislikes'];
+		$views = $_POST['ViewCount'];
+		$private = $_POST['Privacy'];
+		$date = $_POST['Date'];
+
+		$sql = "INSERT INTO image (uid, Path, Title, Description, Likes, Dislikes, ViewCount, Privacy, Date)
+		VALUES ('$uid', '$path', '$title', '$description', '$likes', '$dislikes', '$views', '$private', '$date')";
+
+		$result = mysqli_query($conn, $sql);
+
+		if (move_uploaded_file($_FILES['Path']['tmp_name'], $target)) {
+			$msg = "Image uploaded succesfully";
+		} else {
+			$msg = "There was a probelem uploading the image";
+		}
+
+	}
+}
+
 ?>
